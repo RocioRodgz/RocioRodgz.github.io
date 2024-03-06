@@ -1,0 +1,121 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('fondotts.png') center/cover no-repeat;
+    min-height: 100vh;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background: url('footer.png') center/100% 100% no-repeat;
+    color: white;
+    text-align: center;
+    z-index: 1;
+}
+
+.contenedor1 {
+    display: flex;
+    flex-direction: column;
+    
+}
+.imag img {
+    max-width: 60%;
+    max-height: 60%;
+    padding: 10%;
+    opacity: 1; 
+    z-index: 1;
+    transition: transform 0.5s ease-in-out;
+}
+
+.imag img:hover {
+    transform: rotate(5deg); 
+}
+.contenedor2 {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(235, 230, 230,0.3);
+    
+    width: 100%;
+    height: 25%;
+    position: relative;
+    margin-top: -5%;
+}
+
+.titulo {
+    color: brown;
+}
+
+.parrafo {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px; 
+    margin: auto;
+    max-width: 600px;
+    max-height: 300px;
+    
+    background-color: rgba(255, 255, 255, 0.9); 
+    border-radius: 20px;
+    position: relative;
+    opacity: 0; 
+
+    
+    animation: fadeInUp 2s forwards cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+
+@keyframes fadeInUp {
+    0% { opacity: 0; transform: translateY(30px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+
+
+.cn-texto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 20%;
+    margin-top: 2%;
+    margin-bottom: 10%; /* Ajuste para dispositivos más pequeños */
+}
+
+.cn-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    text-align: center;
+    height: 45%;
+}
+
+.cn-titulo img {
+    width: 35%;
+    max-width: 35%;
+    transform: rotate(5deg);
+    transition: transform 0.5s ease-in-out;
+    z-index: 1;
+}
+
+.cn-titulo:hover img {
+    transform: rotate(20deg);
+}
+
+
+@media (max-width: 600px) {
+    .parrafo {
+        padding: 10px; 
+        margin-bottom: 5%; 
+    }
+}
+
+
